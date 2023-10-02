@@ -2,12 +2,12 @@
 Welcome to the ALX Higher Level Programming directory! In this repository, you will find various projects and assignments related to higher-level programming languages, primarily focusing on Python. This README file will provide you with an overview of the contents and how to navigate through them.
 
 ## Table of Contents
-Description
-Projects
-Getting Started
-Usage
-Contributing
-License
+* Description
+* Projects
+*Getting Started
+* Usage
+* Contributing
+* License
 
 ## Author
 
@@ -29,7 +29,7 @@ Here is a list of some of the projects you will find in this repository:
 
 * 0x04-python-more_data_structures: Further exploration of Python data structures, including sets and lambda functions.
 
-** 0x05-python-exceptions: Handling exceptions and error management in Python.
+* 0x05-python-exceptions: Handling exceptions and error management in Python.
 
 * 0x06-python-classes: Introduction to Object-Oriented Programming (OOP) concepts in Python, including classes and objects.
 
@@ -53,7 +53,7 @@ Once your virtual environment is activated, you can install project-specific dep
 
 ## bash
 Copy code
-$pip install -r requirements.txt
+- **$pip install -r requirements.txt
 Usage
 To use and work on a specific project, navigate to its directory and follow the instructions provided in the project's README.md file. Typically, you will find information about how to run the code, complete the tasks, and test your implementations.
 
@@ -64,7 +64,7 @@ Contributions to this repository are welcome! If you have improvements, bug fixe
 
 Fork the repository to your GitHub account.
 Create a new branch for your changes: 
-$ git checkout -b feature/new-feature.
+- **$git checkout -b feature/new-feature.
 Make your changes and commit them with clear and concise commit messages.
 Push your changes to your fork: git push origin feature/new-feature.
 Create a pull request from your fork to this repository.
