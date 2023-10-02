@@ -19,21 +19,21 @@ This repository is dedicated to the exploration and practice of higher-level pro
 # Projects
 Here is a list of some of the projects you will find in this repository:
 
-** 0x00-python-hello_world: A simple introductory project to Python, covering basic syntax and printing.
+* 0x00-python-hello_world: A simple introductory project to Python, covering basic syntax and printing.
 
-** 0x01-python-if_else_loops_functions: Exploring conditional statements, loops, and defining functions in Python.
+* 0x01-python-if_else_loops_functions: Exploring conditional statements, loops, and defining functions in Python.
 
-** 0x02-python-import_modules: Understanding Python modules, import statements, and how to organize your code effectively.
+* 0x02-python-import_modules: Understanding Python modules, import statements, and how to organize your code effectively.
 
-** 0x03-python-data_structures: Learning about data structures such as lists, tuples, and dictionaries in Python.
+* 0x03-python-data_structures: Learning about data structures such as lists, tuples, and dictionaries in Python.
 
-** 0x04-python-more_data_structures: Further exploration of Python data structures, including sets and lambda functions.
+* 0x04-python-more_data_structures: Further exploration of Python data structures, including sets and lambda functions.
 
 ** 0x05-python-exceptions: Handling exceptions and error management in Python.
 
-** 0x06-python-classes: Introduction to Object-Oriented Programming (OOP) concepts in Python, including classes and objects.
+* 0x06-python-classes: Introduction to Object-Oriented Programming (OOP) concepts in Python, including classes and objects.
 
-** 0x07-python-test_driven_development: Embracing Test-Driven Development (TDD) and writing unit tests for your code.
+* 0x07-python-test_driven_development: Embracing Test-Driven Development (TDD) and writing unit tests for your code.
 
 Each project directory contains specific instructions and tasks to complete. Be sure to read the README.md file within each project folder for detailed information on the objectives and requirements.
 
