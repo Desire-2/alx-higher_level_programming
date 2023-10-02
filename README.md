@@ -48,7 +48,7 @@ Copy code
 $ python -m venv myenv
 
 # Activate the virtual environment
-$ source myenv/bin/activate
+- **$ source myenv/bin/activate**
 Once your virtual environment is activated, you can install project-specific dependencies using pip:
 
 ## bash
