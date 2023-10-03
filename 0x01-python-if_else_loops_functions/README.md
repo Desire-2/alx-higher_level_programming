@@ -321,7 +321,9 @@ You are not allowed to create new nodes or objects, or change the head pointer.
 Example:
 python
 Copy code
->>> {
+{
+    PyObject *p;
+
 >>> class Node:
 ...     def __init__(self, data):
 ...         self.data = data
