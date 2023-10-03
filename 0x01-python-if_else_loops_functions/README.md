@@ -321,6 +321,7 @@ You are not allowed to create new nodes or objects, or change the head pointer.
 Example:
 python
 Copy code
+>>> {
 >>> class Node:
 ...     def __init__(self, data):
 ...         self.data = data
@@ -347,6 +348,7 @@ None
 >>> head = delete_by_value(head, 1)
 >>> print_list(head)
 2
+}
 You can find the source code in the provided repository under 0x01-python-if_else_loops_functions/101-delete_by_value.c.
 Task 17: CPython #2: PyFloatObject
 Write a C function double c_python_print(PyObject *p); that prints a Python PyFloatObject.
