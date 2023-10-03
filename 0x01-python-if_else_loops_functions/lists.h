@@ -4,15 +4,15 @@
 #include <stdlib.h>
 /**
  * struct listint_s - Singly linked list
- * @m: integer to be listed
- * @nxt: Next node Pointer
+ * @n: integer to be listed
+ * @next: Next node Pointer
  *
  * Description: Singly linked list node structure
  */
 typedef struct listint_s
 {
-	int m;
-	struct listint_s *nxt;
+	int n;
+	struct listint_s *next;
 } listint_t;
 
 listint_t *insert_node(listint_t **head, int number);

@@ -18,30 +18,30 @@ listint_t *insert_node(listint_t **head, int number)
 	if (nw_nd == NULL)
 		return (NULL);
 	curr_nd = *head;
-	nw_nd->m = number;
-	nw_nd->nxt = NULL;
+	nw_nd->n = number;
+	nw_nd->next = NULL;
 	if (*head == NULL)
 	{
 		*head = nw_nd;
 		return (nw_nd);
 	}
-	if (curr_nd->m > number)
+	if (curr_nd->n > number)
 	{
-		nw_nd->nxt = curr_nd;
+		nw_nd->next = curr_nd;
 		*head = nw_nd;
 		return (nw_nd);
 	}
 
-	while (curr_nd->nxt != NULL)
+	while (curr_nd->next != NULL)
 	{
-		if (curr_nd->nxt->m > number)
+		if (curr_nd->next->n > number)
 		{
-			nw_nd->nxt = curr_nd->nxt;
-			curr_nd->nxt = nw_nd;
+			nw_nd->next = curr_nd->next;
+			curr_nd->next = nw_nd;
 			return (nw_nd);
 		}
-		curr_nd = curr_nd->nxt;
+		curr_nd = curr_nd->next;
 	}
-	curr_nd->nxt = nw_nd;
+	curr_nd->next = nw_nd;
 	return (nw_nd);
 }
