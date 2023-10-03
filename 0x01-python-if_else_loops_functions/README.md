@@ -147,20 +147,20 @@ True
 False
 >>> islower('1')
 False
-You can find the source code in the provided repository under 0x01-python-if_else_loops_functions/7-islower.py.
-Task 8: To uppercase
-Write a Python function def uppercase(str): that converts a string to uppercase.
-Prototype: def uppercase(str):
-Returns the uppercase version of the string.
-You can assume str will be a string of one or more characters.
-The function should not use any built-in Python function.
-You are not allowed to import any module.
-You are not allowed to use any loops (while, for, etc.)
-You are not allowed to use any conditional statements (if, for, etc.)
-You are not allowed to create any variable other than new_string.
-You can only use the variable new_string once.
-Example:
-python
+-You can find the source code in the provided repository under 0x01-python-if_else_loops_functions/7-islower.py.
+-Task 8: To uppercase
+-Write a Python function def uppercase(str): that converts a string to uppercase.
+-Prototype: def uppercase(str):
+-Returns the uppercase version of the string.
+-You can assume str will be a string of one or more characters.
+-The function should not use any built-in Python function.
+-You are not allowed to import any module.
+-You are not allowed to use any loops (while, for, etc.)
+-You are not allowed to use any conditional statements (if, for, etc.)
+-You are not allowed to create any variable other than new_string.
+-You can only use the variable new_string once.
+* Example:
+* python
 Copy code
 >>> uppercase("hello")
 'HELLO'
