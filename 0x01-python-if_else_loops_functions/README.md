@@ -186,12 +186,12 @@ Copy code
 0
 >>> print_last_digit(-1024)
 4
-You can find the source code in the provided repository under 0x01-python-if_else_loops_functions/9-print_last_digit.py.
-Task 10: a + b
-Write a Python function def add(a, b): that adds two integers and returns the result.
-Prototype: def add(a, b):
-Returns the value of a + b.
-You are not allowed to import any module.
+* You can find the source code in the provided repository under 0x01-python-if_else_loops_functions/9-print_last_digit.py.
+* Task 10: a + b
+* Write a Python function def add(a, b): that adds two integers and returns the result.
+* Prototype: def add(a, b):
+* Returns the value of a + b.
+* You are not allowed to import any module.
 You can only use the + and - operators.
 You are not allowed to use built-in functions like sum or math.sqrt.
 You are not allowed to use loops (for, while, etc.)
