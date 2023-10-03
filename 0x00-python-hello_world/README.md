@@ -1,3 +1,7 @@
+# 0x00. Python - Hello, World
+This is a project for learning the basics of Python programming. It covers various tasks to help you become familiar with Python syntax, printing, string manipulation, and more. Each task is designed to reinforce your understanding of Python concepts.
+
+## General:
 
 # 0x00. Python - Hello, World
 This is a project for learning the basics of Python programming. It covers various tasks to help you become familiar with Python syntax, printing, string manipulation, and more. Each task is designed to reinforce your understanding of Python concepts.
@@ -28,16 +32,21 @@ Welcome to the Python world! This project focuses on the fundamentals of Python,
 * How to print text and variables using print
 * How to use strings
 * What are indexing and slicing in Python
-* What is the official Python coding style and how to check your code * with pycodestyle
-# Copyright - Plagiarism:
 
+* What is the official Python coding style and how to check your code with pycodestyle
+
+# Copyright - Plagiarism:
 * The importance of originality in your solutions
 * The consequences of plagiarism
 * The prohibition of publishing project content
 * How to avoid plagiarism and create your own solutions
+* Requirements
+* Python Scripts:
+* Allowed editors: vi, vim, emacs
+* All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
+
 # Requirements
 * Python Scripts:
-
 * Allowed editors: vi, vim, emacs
 * All your files will be interpreted/compiled on Ubuntu 20.04 LTS using * python3 (version 3.8.5)
 * All your files should end with a new line
@@ -47,6 +56,12 @@ Welcome to the Python world! This project focuses on the fundamentals of Python,
 * Your code should use the pycodestyle (version 2.8.*)
 * All your files must be executable
 * The length of your files will be tested using wc
+## Shell Scripts:
+
+## C Scripts:
+
+* Allowed editors: vi, vim, emacs
+* All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -#!Wextra -pedantic -std=gnu89
 Shell Scripts:
 
 * Allowed editors: vi, vim, emacs
@@ -58,11 +73,12 @@ Shell Scripts:
 # C Scripts:
 
 * Allowed editors: vi, vim, emacs
-* All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
+* All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gn
 * All your files should end with a new line
 * Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
 * You are not allowed to use global variables
 * No more than 5 functions per file
+* The prototypes of all your functions should be included in your header file called lists.h
 * The prototypes of all your functions should be included in your header * file called lists.h
 * Don't forget to push your header file
 * All your header files should be include guarded
@@ -452,4 +468,5 @@ Repo:
 
 GitHub repository: alx-higher_level_programming
 Directory: 0x00-python-hello_world
-File: 10-check_cycle.c, lists.h
+
+File: 10-check_cycle.c, list
