@@ -3,6 +3,26 @@ This is a project for learning the basics of Python programming. It covers vario
 
 ## General:
 
+# 0x00. Python - Hello, World
+This is a project for learning the basics of Python programming. It covers various tasks to help you become familiar with Python syntax, printing, string manipulation, and more. Each task is designed to reinforce your understanding of Python concepts.
+
+## Project Details
+* Project Name: 0x00. Python - Hello, World
+* Author: Guillaume
+* Weight: 1
+* Start Date: October 2, 2023, 6:00 AM
+* End Date: October 3, 2023, 6:00 AM
+* Checker Release: October 2, 2023, 12:00 PM
+* Auto Review: Will be launched at the deadline
+## Concepts
+For this project, you are expected to explore the following concept:
+
+* Python programming
+* Author's Disclaimer
+Welcome to the Python world! This project focuses on the fundamentals of Python, emphasizing simplicity and clarity in your code. You'll discover that Python offers multiple ways to accomplish tasks, and you'll become familiar with Python's coding style guide, PEP8 (PyCode).
+
+# General:
+
 * Why Python programming is awesome
 * Who created Python
 * Who is Guido van Rossum
@@ -12,18 +32,23 @@ This is a project for learning the basics of Python programming. It covers vario
 * How to print text and variables using print
 * How to use strings
 * What are indexing and slicing in Python
-* What is the official Python coding style and how to check your code with pycodestyle
-## Copyright - Plagiarism:
 
+* What is the official Python coding style and how to check your code with pycodestyle
+
+# Copyright - Plagiarism:
 * The importance of originality in your solutions
 * The consequences of plagiarism
 * The prohibition of publishing project content
 * How to avoid plagiarism and create your own solutions
 * Requirements
 * Python Scripts:
-
 * Allowed editors: vi, vim, emacs
 * All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
+
+# Requirements
+* Python Scripts:
+* Allowed editors: vi, vim, emacs
+* All your files will be interpreted/compiled on Ubuntu 20.04 LTS using * python3 (version 3.8.5)
 * All your files should end with a new line
 * The first line of all your files should be exactly #!/usr/bin/python3
 * A README.md file at the root of the repo, containing a description of the repository
@@ -37,11 +62,24 @@ This is a project for learning the basics of Python programming. It covers vario
 
 * Allowed editors: vi, vim, emacs
 * All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -#!Wextra -pedantic -std=gnu89
+Shell Scripts:
+
+* Allowed editors: vi, vim, emacs
+* All your scripts will be tested on Ubuntu 20.04 LTS
+* All your scripts should be exactly two lines long (wc -l file should print 2)
+* All your files should end with a new line
+* The first line of all your files should be exactly #!/bin/bash
+* All your files must be executable
+# C Scripts:
+
+* Allowed editors: vi, vim, emacs
+* All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gn
 * All your files should end with a new line
 * Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
 * You are not allowed to use global variables
 * No more than 5 functions per file
 * The prototypes of all your functions should be included in your header file called lists.h
+* The prototypes of all your functions should be included in your header * file called lists.h
 * Don't forget to push your header file
 * All your header files should be include guarded
 * Zen of Python
@@ -430,4 +468,5 @@ Repo:
 
 GitHub repository: alx-higher_level_programming
 Directory: 0x00-python-hello_world
-File: 10-check_cycle.c, lists.h
+
+File: 10-check_cycle.c, list
