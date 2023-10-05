@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import sys
-
 def main():
     if len(sys.argv) == 1:
         print(0)
@@ -11,9 +10,7 @@ def main():
                 total += int(arg)
             except ValueError:
                 pass
-
-        # Print the total sum
-        print(total)
-
+            # Print the total sum
+            print(total)
 if __name__ == "__main__":
     main()
