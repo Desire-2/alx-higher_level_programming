@@ -45,11 +45,11 @@ You may also want to set up a virtual environment to isolate project dependencie
 bash
 Copy code
 ## Create a virtual environment
-$ python -m venv myenv
+#!python -m venv myenv
 
 # Activate the virtual environment
-- **$ source myenv/bin/activate**
-Once your virtual environment is activated, you can install project-specific dependencies using pip:
+- #!$ source myenv/bin/activate**
+*Once your virtual environment is activated, you can install project-specific dependencies using pip:
 
 ## bash
 Copy code
