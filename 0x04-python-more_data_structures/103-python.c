@@ -1,10 +1,10 @@
 #include <lists.h>
 
 /**
- * _print_python_list - Function Prints basic info Python lists.
+ * print_python_list - Function Prints basic info Python lists.
  * @p: PyObject list object.
  */
-void _print_python_list(PyObject *p)
+void print_python_list(PyObject *p)
 {
 	int size, alloc, i;
 	const char *type;
@@ -28,10 +28,10 @@ void _print_python_list(PyObject *p)
 }
 
 /**
- * _print_python_bytes - Function Prints basic info Python byte objects.
+ * print_python_bytes - Function Prints basic info Python byte objects.
  * @p: PyObject byte object.
  */
-void _print_python_bytes(PyObject *p)
+void print_python_bytes(PyObject *p)
 {
 	unsigned char i, size;
 	PyBytesObject *bytes = (PyBytesObject *)p;
