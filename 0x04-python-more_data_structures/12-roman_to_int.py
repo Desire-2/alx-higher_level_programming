@@ -1,5 +1,19 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
+    """
+    Converts a Roman numeral to an integer.
+    ...
+
+    Parameters
+    ----------
+    roman_string : str
+        the roman numeral to convert
+
+    Return:
+        0 If the roman_string is not a string or None
+        The corresponding integer otherwise.
+    """
+
     if (not isinstance(roman_string, str) or
             roman_string is None):
         return (0)
