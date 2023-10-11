@@ -4,15 +4,16 @@ void print_python_list(PyObject *p);
 void print_python_bytes(PyObject *p);
 
 /**
- * _print_python_list - Prints basic info about Python lists.
- * @p: a PyObject list object.
+ * print_python_list - Function Prints basic info Python lists.
+ * @p: PyObject list object.
  */
-void _print_python_list(PyObject *p)
+void print_python_list(PyObject *p)
 {
-	int size, alloc, i;
-	const char *type;
 	PyListObject *list = (PyListObject *)p;
-	PyVarObject *var = (PyVarObject *)p;
+        PyVarObject *var = (PyVarObject *)p;
+	int size, alloc, r;
+	const char *type;
+
 
 	size = var->ob_size;
 	alloc = list->allocated;
@@ -21,23 +22,23 @@ void _print_python_list(PyObject *p)
 	printf("[*] Size of the Python List = %d\n", size);
 	printf("[*] Allocated = %d\n", alloc);
 
-	for (i = 0; i < size; i++)
+	for (r = 0; r < size; r++)
 	{
-		type = list->ob_item[i]->ob_type->tp_name;
-		printf("Element %d: %s\n", i, type);
+		type = list->ob_item[r]->ob_type->tp_name;
+		printf("Element %d: %s\n", r, type);
 		if (strcmp(type, "bytes") == 0)
-			print_python_bytes(list->ob_item[i]);
+			print_python_bytes(list->ob_item[r]);
 	}
 }
 
 /**
- * _print_python_bytes - Prints basic info about Python byte objects.
- * @p: A PyObject byte object.
+ * print_python_bytes - Function Prints basic info Python byte objects.
+ * @p: PyObject byte object.
  */
-void _print_python_bytes(PyObject *p)
+void print_python_bytes(PyObject *p)
 {
-	unsigned char i, size;
 	PyBytesObject *bytes = (PyBytesObject *)p;
+	unsigned char r, size;
 
 	printf("[.] bytes object info\n");
 	if (strcmp(p->ob_type->tp_name, "bytes") != 0)
@@ -55,10 +56,10 @@ void _print_python_bytes(PyObject *p)
 		size = ((PyVarObject *)p)->ob_size + 1;
 
 	printf("  first %d bytes: ", size);
-	for (i = 0; i < size; i++)
+	for (r = 0; r < size; r++)
 	{
-		printf("%02hhx", bytes->ob_sval[i]);
-		if (i == (size - 1))
+		printf("%02hhx", bytes->ob_sval[r]);
+		if (r == (size - 1))
 			printf("\n");
 		else
 			printf(" ");
