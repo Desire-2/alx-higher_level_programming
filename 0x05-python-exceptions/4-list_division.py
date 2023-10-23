@@ -12,5 +12,5 @@ def list_division(my_list_1, my_list_2, list_length):
         except (IndexError, ValueError):
             print("out of range")
         finally:
-            rslt.append(_div)
-    return rslt
+            _rslt.append(_div)
+    return _rslt
