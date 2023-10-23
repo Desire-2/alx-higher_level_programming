@@ -6,12 +6,11 @@ void print_python_float(PyObject *p);
 
 /**
  * print_python_list - Prints basic info about Python lists.
- *
  * @p: A PyObject list object.
  */
 void print_python_list(PyObject *p)
 {
-	Py_ssize_t size, alloc, r;
+	Py_ssize_t size, alloc, i;
 	const char *type;
 	PyListObject *list = (PyListObject *)p;
 	PyVarObject *var = (PyVarObject *)p;
@@ -31,14 +30,14 @@ void print_python_list(PyObject *p)
 	printf("[*] Size of the Python List = %ld\n", size);
 	printf("[*] Allocated = %ld\n", alloc);
 
-	for (r = 0; r < size; r++)
+	for (i = 0; i < size; i++)
 	{
-		type = list->ob_item[r]->ob_type->tp_name;
-		printf("Element %ld: %s\n", r, type);
+		type = list->ob_item[i]->ob_type->tp_name;
+		printf("Element %ld: %s\n", i, type);
 		if (strcmp(type, "bytes") == 0)
-			print_python_bytes(list->ob_item[r]);
+			print_python_bytes(list->ob_item[i]);
 		else if (strcmp(type, "float") == 0)
-			print_python_float(list->ob_item[r]);
+			print_python_float(list->ob_item[i]);
 	}
 }
 
@@ -48,7 +47,7 @@ void print_python_list(PyObject *p)
  */
 void print_python_bytes(PyObject *p)
 {
-	Py_ssize_t s, r;
+	Py_ssize_t size, i;
 	PyBytesObject *bytes = (PyBytesObject *)p;
 
 	fflush(stdout);
@@ -60,19 +59,19 @@ void print_python_bytes(PyObject *p)
 		return;
 	}
 
-	printf("  size: %ld\n", ((PyVarObject *)p)->ob_s);
+	printf("  size: %ld\n", ((PyVarObject *)p)->ob_size);
 	printf("  trying string: %s\n", bytes->ob_sval);
 
-	if (((PyVarObject *)p)->ob_s >= 10)
-		s = 10;
+	if (((PyVarObject *)p)->ob_size >= 10)
+		size = 10;
 	else
-		s = ((PyVarObject *)p)->ob_s + 1;
+		size = ((PyVarObject *)p)->ob_size + 1;
 
-	printf("  first %ld bytes: ", s);
-	for (r = 0; r < s; r++)
+	printf("  first %ld bytes: ", size);
+	for (i = 0; i < size; i++)
 	{
-		printf("%02hhx", bytes->ob_sval[r]);
-		if (r == (s - 1))
+		printf("%02hhx", bytes->ob_sval[i]);
+		if (i == (size - 1))
 			printf("\n");
 		else
 			printf(" ");
@@ -80,12 +79,12 @@ void print_python_bytes(PyObject *p)
 }
 
 /**
- * print_python_float - Prints Basic info About Python Float Objects.
- * @p: A PyObject Float Object.
+ * print_python_float - Prints basic info about Python float objects.
+ * @p: A PyObject float object.
  */
 void print_python_float(PyObject *p)
 {
-	char *_buf = NULL;
+	char *buffer = NULL;
 
 	PyFloatObject *float_obj = (PyFloatObject *)p;
 
@@ -98,9 +97,9 @@ void print_python_float(PyObject *p)
 		return;
 	}
 
-	_buf = PyOS_double_to_string(float_obj->ob_fval, 'r', 0,
+	buffer = PyOS_double_to_string(float_obj->ob_fval, 'r', 0,
 			Py_DTSF_ADD_DOT_0, NULL);
-	printf("  value: %s\n", _buf);
-	PyMem_Free(_buf);
+	printf("  value: %s\n", buffer);
+	PyMem_Free(buffer);
 }
 
