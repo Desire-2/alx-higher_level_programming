@@ -10,12 +10,12 @@ void print_python_float(PyObject *p);
  */
 void print_python_list(PyObject *p)
 {
-	Py_ssize_t size, alloc, i;
+	Py_ssize_t s, alloc, r;
 	const char *type;
 	PyListObject *list = (PyListObject *)p;
 	PyVarObject *var = (PyVarObject *)p;
 
-	size = var->ob_size;
+	s = var->ob_size;
 	alloc = list->allocated;
 
 	fflush(stdout);
@@ -27,17 +27,17 @@ void print_python_list(PyObject *p)
 		return;
 	}
 
-	printf("[*] Size of the Python List = %ld\n", size);
+	printf("[*] Size of the Python List = %ld\n", s);
 	printf("[*] Allocated = %ld\n", alloc);
 
-	for (i = 0; i < size; i++)
+	for (r = 0; r < s; r++)
 	{
-		type = list->ob_item[i]->ob_type->tp_name;
-		printf("Element %ld: %s\n", i, type);
+		type = list->ob_item[r]->ob_type->tp_name;
+		printf("Element %ld: %s\n", r, type);
 		if (strcmp(type, "bytes") == 0)
-			print_python_bytes(list->ob_item[i]);
+			print_python_bytes(list->ob_item[r]);
 		else if (strcmp(type, "float") == 0)
-			print_python_float(list->ob_item[i]);
+			print_python_float(list->ob_item[r]);
 	}
 }
 
