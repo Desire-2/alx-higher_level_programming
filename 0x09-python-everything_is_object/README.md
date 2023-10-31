@@ -1,4 +1,4 @@
-0x09. Python - Everything is an Object
+* 0x09. Python - Everything is an Object
 Project Description
 This project delves into the concept that everything in Python is an object and aims to explore how Python operates with various types of objects, distinguishing between mutable and immutable objects. The project presents various scenarios and questions about Python's specificities and challenges the participants to understand and reason about the behavior of different object types without resorting to immediate code implementation.
 
