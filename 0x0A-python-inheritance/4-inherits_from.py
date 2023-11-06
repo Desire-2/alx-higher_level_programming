@@ -12,7 +12,8 @@ def inherits_from(obj, base_class):
         - obj: object to inspect
         - base_class: class to evaluate
 
-    Returns: True if obj is an instance of a class inherited from base_class, False otherwise
+    Returns: True if obj is an instance of a class
+    inherited from base_class, False otherwise
     """
 
     return isinstance(obj, base_class) and type(obj) != base_class
