@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""Defines a class MyInt that inherits from int and reverses the behavior of '!=' and '==' operators."""
+"""Defines a class MyInt that inherits from int,
+    and reverses the behavior of '!=' and '==' operators."""
 
 class MyInt(int):
-    """Class inheriting from int but reverses the behavior of '!=' and '==' operators."""
+    """Class inheriting from int,
+    but reverses the behavior of '!=' and '==' operators."""
 
     def __eq__(self, other):
         """Override the '==' operator to perform inequality."""
