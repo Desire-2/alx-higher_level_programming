@@ -1,15 +1,17 @@
-#!/usr/bin/python3
-import random
-import sys
-from time import sleep
-import datetime
+def append_after(filename="", search_string="", new_string=""):
+    try:
+        with open(filename, 'r') as file:
+            lines = file.readlines()
 
-for i in range(10000):
-        sleep(random.random())
-        sys.stdout.write("{:d}.{:d}.{:d}.{:d} - [{}] \"GET /projects/260 HTTP/1.1\" {} {}\n".format(
-                random.randint(1, 255), random.randint(1, 255), random.randint(1, 255), random.randint(1, 255),
-                datetime.datetime.now(),
-                random.choice([200, 301, 400, 401, 403, 404, 405, 500]),
-                random.randint(1, 1024)
-                                                    ))
-        sys.stdout.flush()
+        with open(filename, 'w') as file:
+            for line in lines:
+                file.write(line)
+                if search_string in line:
+                    file.write(new_string)
+
+    except Exception:
+        pass  # You don't need to handle exceptions, so just continue if any occur
+
+# Example usage:
+if __name__ == "__main__":
+    append_after("append_after_100.txt", "Python", "\"C is fun!\"\n")
