@@ -26,16 +26,16 @@ if __name__ == "__main__":
     def print_stats():
         '''Prints accumulated statistics.'''
         print("File size: {}".format(size[0]))
-        for k in sorted(codes.keys()):
-            if codes[k]:
-                print("{}: {}".format(k, codes[k]))
-    i = 1
+        for m in sorted(codes.keys()):
+            if codes[m]:
+                print("{}: {}".format(m, codes[m]))
+    r = 1
     try:
         for line in sys.stdin:
             check_match(line)
-            if i % 10 == 0:
+            if r % 10 == 0:
                 print_stats()
-            i += 1
+            r += 1
     except KeyboardInterrupt:
         print_stats()
         raise
