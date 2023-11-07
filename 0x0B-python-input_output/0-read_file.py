@@ -1,6 +1,15 @@
 #!/usr/bin/python3
+"""
+0-read_file module
+"""
+
+
 def read_file(filename=""):
-    with open(filename, 'r') as f:
+    """
+    read_file - reads a text file (UTF8) and prints it to stdout
+    Args:
+        filename: name of the file
+    """
+    with open(filename, "r", encoding="UTF-8") as f:
         for ln in f:
             print(ln, end="")
-    f.closed
