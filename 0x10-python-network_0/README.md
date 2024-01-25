@@ -1,56 +1,74 @@
-## 0x10. Python - Network #0
+This collection consists of 10 tasks for the Python Network #0 project. The tasks encompass various concepts such as cURL, HTTP, and HTTPS protocols, headers, and web scraping.
 
-### Description
+## Task Overview
+Outlined below are the tasks included in this repository:
 
-This project covers various aspects of network programming using Python and Bash scripting. It involves sending HTTP requests, handling responses, understanding HTTP methods, headers, cookies, and more. The project includes a series of tasks designed to reinforce understanding and proficiency in network protocols and communication.
+| Task | Description |
+| --- | --- |
+| [0-body_size.sh](./0-body_size.sh) | This Bash script takes a URL as input, sends a request to that URL, and displays the size of the response body in bytes. |
+| [1-body.sh](./1-body.sh) | This Bash script accepts a URL, sends a GET request to it, and displays the response body. |
+| [2-delete.sh](./2-delete.sh) | Sends a DELETE request to a specified URL and displays the response body. |
+| [3-methods.sh](./3-methods.sh) | Displays all HTTP methods accepted by the server for a given URL. |
+| [4-header.sh](./4-header.sh) | Sends a GET request to a URL, displays the response body, and includes a header variable `X-HolbertonSchool-User-Id` with a value of `98`. |
+| [5-post_params.sh](./5-post_params.sh) | Sends a POST request to a URL, displaying the response body, and sets variables `email` to `hr@holbertonschool.com` and `subject` to `I will always be here for PLD`. |
+| [6-peak.py](./6-peak.py) | Python function to find a peak in an unsorted list of integers with a time complexity of `O(log(n))`. |
+| [100-status_code.sh](./100-status_code.sh) | Sends a request to a specified URL and displays only the status code of the response. |
+| [101-post_json.sh](./101-post_json.sh) | Sends a JSON POST request to a specified URL and displays the response body. |
+| [102-catch_me.sh](./102-catch_me.sh) | Requests `0.0.0.0:5000/catch_me` causing the server to respond with `You got me!`. |
 
-### General Information
+Each task is accompanied by detailed instructions on its expected behavior and implementation.
 
-- **Author:** Guillaume
-- **Weight:** 1
-- **Project Duration:** Jan 25, 2024, 6:00 AM - Jan 26, 2024, 6:00 AM
-- **Checker Release Date:** Jan 25, 2024, 12:00 PM
-- **Auto Review Launch:** Scheduled at the deadline
+## Task Descriptions
+Outlined are the functionalities of each task:
 
-### Resources
+### Task 0: 0-body_size.sh
+A Bash script that retrieves the size of the response body in bytes for a given URL.
 
-- HTTP (HyperText Transfer Protocol) (except: “TRACE” Request Method, “CONNECT” Request Method, Language Negotiation and “Options MultiView” and Character Set Negotiation)
-- HTTP Cookies
+### Task 1: 1-body.sh
+A Bash script that retrieves and displays the response body of a GET request to a provided URL.
 
-### Learning Objectives
+### Task 2: 2-delete.sh
+A Bash script that sends a DELETE request to a specified URL and displays the response body.
 
-Upon completion of this project, learners should be able to explain the following concepts without external assistance:
+### Task 3: 3-methods.sh
+A Bash script that identifies the HTTP methods supported by a server for a given URL.
 
-- Understanding of URLs, HTTP, and HTTP requests/responses
-- Reading URLs and understanding their components
-- Differentiating between HTTP methods, status codes, headers, and cookies
-- Making requests using cURL and interpreting responses
-- Understanding the process when typing a URL in a browser
+### Task 4: 4-header.sh
+A Bash script that sends a GET request to a URL, displays the response body, and includes a custom header `X-HolbertonSchool-User-Id` with a value of `98`.
 
-### Requirements
+### Task 5: 5-post_params.sh
+A Bash script that sends a POST request to a URL, displaying the response body, and sets specific variables.
 
-- All scripts should be tested on Ubuntu 20.04 LTS.
-- Bash scripts should be exactly 3 lines long and end with a new line.
-- All files must be executable and use `#!/bin/bash` as the first line for Bash scripts.
-- Python scripts should use `#!/usr/bin/python3` as the first line and adhere to PEP8 style guidelines.
-- All modules, classes, and functions should be properly documented.
-- No plagiarism or content publishing is allowed.
+### Task 6: 6-peak.py
+A Python function that finds a peak in an unsorted list of integers with a specified time complexity.
 
-### Tasks
+### Task 100: 100-status_code.sh
+A Bash script that retrieves and displays only the status code of a response for a provided URL.
 
-| Task | Description | Script |
-| ---- | ----------- | ------ |
-| 0 | cURL body size | [0-body_size.sh](https://github.com/alx-higher_level_programming/0x10-python-network_0/blob/main/0-body_size.sh) |
-| 1 | cURL to the end | [1-body.sh](https://github.com/alx-higher_level_programming/0x10-python-network_0/blob/main/1-body.sh) |
-| 2 | cURL Method | [2-delete.sh](https://github.com/alx-higher_level_programming/0x10-python-network_0/blob/main/2-delete.sh) |
-| 3 | cURL only methods | [3-methods.sh](https://github.com/alx-higher_level_programming/0x10-python-network_0/blob/main/3-methods.sh) |
-| 4 | cURL headers | [4-header.sh](https://github.com/alx-higher_level_programming/0x10-python-network_0/blob/main/4-header.sh) |
-| 5 | cURL POST parameters | [5-post_params.sh](https://github.com/alx-higher_level_programming/0x10-python-network_0/blob/main/5-post_params.sh) |
-| 6 | Find a peak | [6-peak.py](https://github.com/alx-higher_level_programming/0x10-python-network_0/blob/main/6-peak.py), [6-peak.txt](https://github.com/alx-higher_level_programming/0x10-python-network_0/blob/main/6-peak.txt) |
-| 7 | Only status code | [100-status_code.sh](https://github.com/alx-higher_level_programming/0x10-python-network_0/blob/main/100-status_code.sh) |
-| 8 | cURL a JSON file | [101-post_json.sh](https://github.com/alx-higher_level_programming/0x10-python-network_0/blob/main/101-post_json.sh) |
-| 9 | Catch me if you can! | [102-catch_me.sh](https://github.com/alx-higher_level_programming/0x10-python-network_0/blob/main/102-catch_me.sh) |
+### Task 101: 101-post_json.sh
+A Bash script that sends a JSON POST request to a URL and displays the response body.
 
-**Note:** All scripts should be tested using the provided sandbox with the web server running on port 5000.
+### Task 102: 102-catch_me.sh
+A Bash script that triggers a specific response from a server endpoint.
 
-For further details and implementations, please refer to the respective script files in the [GitHub repository](https://github.com/alx-higher_level_programming/0x10-python-network_0) associated with this project.
+## Usage
+To execute the Bash scripts:
+
+```bash
+./script.sh [URL]
+```
+
+For instance, to run `0-body_size.sh`:
+
+```bash
+./0-body_size.sh http://example.com
+```
+
+## Contributing
+To contribute to this project:
+
+1. Fork the repository.
+2. Create a new branch with your feature: `git checkout -b my-feature`.
+3. Commit your changes: `git commit -m "feat: add new feature"`.
+4. Push to the branch: `git push origin my-feature`.
+5. Submit a pull request with your changes.
